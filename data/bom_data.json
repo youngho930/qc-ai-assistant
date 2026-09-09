@@ -1,0 +1,152 @@
+[
+    {
+        "parentId": null,
+        "code": "FP-105",
+        "name": "S26밴드",
+        "supplier": "대성전자",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577894810
+    },
+    {
+        "parentId": 1774577894810,
+        "code": "SP-117",
+        "name": "S26 밴드 반제품",
+        "supplier": "대성전자",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577894980
+    },
+    {
+        "parentId": 1774577894980,
+        "code": "SP-106",
+        "name": "전극 less S26 밴드",
+        "supplier": "대성전자",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577895165
+    },
+    {
+        "parentId": 1774577895165,
+        "code": "TW-108",
+        "name": "S26 - FPCB",
+        "supplier": "에이치파츠",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577895355
+    },
+    {
+        "parentId": 1774577895165,
+        "code": "LM-125",
+        "name": "DTP503030-400mAh",
+        "supplier": "블루셀",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577895536
+    },
+    {
+        "parentId": 1774577895165,
+        "code": "견적26",
+        "name": "메인보드+파워보드",
+        "supplier": "바로테크",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577895714
+    },
+    {
+        "parentId": 1774577895165,
+        "code": "MM-108",
+        "name": "S26 밴드 커버(민트)",
+        "supplier": "대성전자",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577895883
+    },
+    {
+        "parentId": 1774577894980,
+        "code": "MM-115",
+        "name": "건식전극(S26용)",
+        "supplier": "대성전자",
+        "version": "엑셀 업로드",
+        "reqQty": 3,
+        "unitPrice": 0,
+        "id": 1774577896069
+    },
+    {
+        "parentId": 1774577894810,
+        "code": "SM-107",
+        "name": "S26 박스",
+        "supplier": "가온패키징",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577896242
+    },
+    {
+        "parentId": 1774577894810,
+        "code": "SM-109",
+        "name": "S26 파우치",
+        "supplier": "한빛기프트",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577896409
+    },
+    {
+        "parentId": 1774577894810,
+        "code": "SM-002",
+        "name": "S20,S26 방습지",
+        "supplier": "미지정",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577896584
+    },
+    {
+        "parentId": 1774577894810,
+        "code": "MM-018",
+        "name": "USB 케이블(S20/C-type/흰색)",
+        "supplier": "대성전자",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577896751
+    },
+    {
+        "parentId": 1774577894810,
+        "code": "SP-102",
+        "name": "건식전극(S26용) 1set(3ea)",
+        "supplier": "대성전자",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577896923
+    },
+    {
+        "parentId": 1774577896923,
+        "code": "MM-115",
+        "name": "건식전극(S26용)",
+        "supplier": "대성전자",
+        "version": "엑셀 업로드",
+        "reqQty": 3,
+        "unitPrice": 0,
+        "id": 1774577897093
+    },
+    {
+        "parentId": 1774577896923,
+        "code": "SM-001",
+        "name": "건식전극 지퍼백",
+        "supplier": "미지정",
+        "version": "엑셀 업로드",
+        "reqQty": 1,
+        "unitPrice": 0,
+        "id": 1774577897265
+    }
+]

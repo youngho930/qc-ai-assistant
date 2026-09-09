@@ -1,0 +1,178 @@
+[
+    {
+        "PROD_CD": "FP-105",
+        "PROD_DES": "S26 밴드",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "205",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "FP-106",
+        "PROD_DES": "S26 밴드(아이보리)",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "117",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "MM-027",
+        "PROD_DES": "키오스크 MW",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "29",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "MM-037",
+        "PROD_DES": "키오스크 MA",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "45",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "PG-017",
+        "PROD_DES": "미라클 탭",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "32",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "FP-105",
+        "PROD_DES": "S26 밴드",
+        "WH_CD": "00002",
+        "WH_DES": "공장창고",
+        "BAL_QTY": "6",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "FP-106",
+        "PROD_DES": "S26 밴드(아이보리)",
+        "WH_CD": "00002",
+        "WH_DES": "공장창고",
+        "BAL_QTY": "8",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "SP-102",
+        "PROD_DES": "건식전극(S26용)",
+        "WH_CD": "00002",
+        "WH_DES": "공장창고",
+        "BAL_QTY": "27",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "MM-002",
+        "PROD_DES": "귓불전극(no wire)",
+        "WH_CD": "00002",
+        "WH_DES": "공장창고",
+        "BAL_QTY": "41",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "SP-117",
+        "PROD_DES": "S26 밴드 반제품",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "118",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "SP-106",
+        "PROD_DES": "전극 less S26 밴드",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "1039",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "TW-108",
+        "PROD_DES": "S26 - FPCB",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "439",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "LM-125",
+        "PROD_DES": "DTP503030-400mAh",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "76",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "견적26",
+        "PROD_DES": "메인보드+파워보드",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "176",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "MM-108",
+        "PROD_DES": "S26 밴드 커버(민트)",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "888",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "MM-115",
+        "PROD_DES": "건식전극(S26용)",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "856",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "SM-107",
+        "PROD_DES": "S26 박스",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "143",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "SM-109",
+        "PROD_DES": "S26 파우치",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "492",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "SM-002",
+        "PROD_DES": "S20,S26 방습지",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "185",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "MM-018",
+        "PROD_DES": "USB 케이블(S20/C-type/흰색)",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "1128",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "SP-102",
+        "PROD_DES": "건식전극(S26용) 1set(3ea)",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "869",
+        "ITEM_TYPE": "1"
+    },
+    {
+        "PROD_CD": "SM-001",
+        "PROD_DES": "건식전극 지퍼백",
+        "WH_CD": "00001",
+        "WH_DES": "본사창고",
+        "BAL_QTY": "121",
+        "ITEM_TYPE": "1"
+    }
+]

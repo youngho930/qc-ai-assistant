@@ -1,0 +1,82 @@
+[
+    {
+        "type": "main",
+        "name": "S26 밴드",
+        "code": "FP-105",
+        "warehouse": "본사창고",
+        "safe_qty": 100,
+        "img": "s26.png",
+        "id": 1
+    },
+    {
+        "type": "main",
+        "name": "S26 밴드(아이보리)",
+        "code": "FP-106",
+        "warehouse": "본사창고",
+        "safe_qty": 100,
+        "img": "s26-i.png",
+        "id": 1773983930564
+    },
+    {
+        "type": "main",
+        "name": "키오스크 MW",
+        "code": "MM-027",
+        "warehouse": "본사창고",
+        "safe_qty": 10,
+        "img": "mw.png",
+        "id": 1773983965717
+    },
+    {
+        "type": "main",
+        "name": "키오스크 MA",
+        "code": "MM-037",
+        "warehouse": "본사창고",
+        "safe_qty": 10,
+        "img": "ma.png",
+        "id": 1773983983347
+    },
+    {
+        "type": "mini",
+        "name": "미라클 탭",
+        "code": "PG-017",
+        "safe_qty": 0,
+        "img": "",
+        "id": 1774417812122
+    },
+    {
+        "type": "main",
+        "name": "S26 밴드",
+        "code": "FP-105",
+        "warehouse": "공장창고",
+        "safe_qty": 5,
+        "img": "",
+        "id": 1774569713416
+    },
+    {
+        "type": "main",
+        "name": "S26 밴드(아이보리)",
+        "code": "FP-106",
+        "warehouse": "공장창고",
+        "safe_qty": 5,
+        "img": "",
+        "id": 1774569741802
+    },
+    {
+        "type": "main",
+        "name": "건식전극(S26용)",
+        "code": "SP-102",
+        "warehouse": "공장창고",
+        "safe_qty": 10,
+        "img": "",
+        "id": 1774570662610
+    },
+    {
+        "type": "main",
+        "name": "귓불전극(no wire)",
+        "code": "MM-002",
+        "warehouse": "공장창고",
+        "safe_qty": 10,
+        "img": "",
+        "id": 1774570685541
+    }
+]
