@@ -189,6 +189,30 @@ def get_supplier(keyword: str = "") -> dict:
     return {"결과": hits}
 
 
+# ---------------------------------------------------------------- 용어 사전
+
+def lookup_term(term: str) -> dict:
+    """현장 용어의 뜻과 실무에서 어떻게 쓰이는지 설명한다."""
+    glossary = _load("glossary.json")
+
+    key = _norm(term)
+    for name, body in glossary.items():
+        if key == _norm(name):
+            return {"용어": name, **body}
+
+    # 부분 일치 (예: "안전재고가 뭐야" -> "안전재고")
+    hits = [n for n in glossary if key in _norm(n) or _norm(n) in key]
+    if len(hits) == 1:
+        return {"용어": hits[0], **glossary[hits[0]]}
+    if hits:
+        return {"후보": hits, "안내": "어느 용어인지 되물어보세요."}
+
+    return {
+        "안내": f"'{term}' 은 용어 사전에 없습니다. 지어내지 말고 등록된 용어를 안내하세요.",
+        "등록된_용어": sorted(glossary.keys()),
+    }
+
+
 # -------------------------------------------------- function calling 스키마
 
 TOOL_SCHEMAS = [
@@ -261,6 +285,21 @@ TOOL_SCHEMAS = [
             },
         },
     },
+    {
+        "name": "lookup_term",
+        "description": (
+            "현장 용어의 뜻과 실무 맥락을 조회한다. BOM, 안전재고, 리드타임, 로트, "
+            "임피던스, 전수검사 등 처음 접하는 사람이 모를 수 있는 용어를 "
+            "묻는 질문에 사용한다."
+        ),
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "term": {"type": "string", "description": "뜻을 찾을 용어"}
+            },
+            "required": ["term"],
+        },
+    },
 ]
 
 TOOL_FUNCS = {
@@ -268,4 +307,5 @@ TOOL_FUNCS = {
     "get_bom": get_bom,
     "check_production_feasibility": check_production_feasibility,
     "get_supplier": get_supplier,
+    "lookup_term": lookup_term,
 }
