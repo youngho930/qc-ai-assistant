@@ -1,7 +1,7 @@
 [
     {
         "PROD_CD": "FP-105",
-        "PROD_DES": "S26 밴드",
+        "PROD_DES": "밴드형 기기 A",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "205",
@@ -9,7 +9,7 @@
     },
     {
         "PROD_CD": "FP-106",
-        "PROD_DES": "S26 밴드(아이보리)",
+        "PROD_DES": "밴드형 기기 A(아이보리)",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "117",
@@ -17,7 +17,7 @@
     },
     {
         "PROD_CD": "MM-027",
-        "PROD_DES": "키오스크 MW",
+        "PROD_DES": "키오스크 A",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "29",
@@ -25,7 +25,7 @@
     },
     {
         "PROD_CD": "MM-037",
-        "PROD_DES": "키오스크 MA",
+        "PROD_DES": "키오스크 B",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "45",
@@ -33,7 +33,7 @@
     },
     {
         "PROD_CD": "PG-017",
-        "PROD_DES": "미라클 탭",
+        "PROD_DES": "태블릿 C",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "32",
@@ -41,7 +41,7 @@
     },
     {
         "PROD_CD": "FP-105",
-        "PROD_DES": "S26 밴드",
+        "PROD_DES": "밴드형 기기 A",
         "WH_CD": "00002",
         "WH_DES": "공장창고",
         "BAL_QTY": "6",
@@ -49,7 +49,7 @@
     },
     {
         "PROD_CD": "FP-106",
-        "PROD_DES": "S26 밴드(아이보리)",
+        "PROD_DES": "밴드형 기기 A(아이보리)",
         "WH_CD": "00002",
         "WH_DES": "공장창고",
         "BAL_QTY": "8",
@@ -57,7 +57,7 @@
     },
     {
         "PROD_CD": "SP-102",
-        "PROD_DES": "건식전극(S26용)",
+        "PROD_DES": "건식전극(기기 A용)",
         "WH_CD": "00002",
         "WH_DES": "공장창고",
         "BAL_QTY": "27",
@@ -73,7 +73,7 @@
     },
     {
         "PROD_CD": "SP-117",
-        "PROD_DES": "S26 밴드 반제품",
+        "PROD_DES": "밴드형 기기 A 반제품",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "118",
@@ -81,7 +81,7 @@
     },
     {
         "PROD_CD": "SP-106",
-        "PROD_DES": "전극 less S26 밴드",
+        "PROD_DES": "밴드형 기기 A(전극 미장착)",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "1039",
@@ -89,7 +89,7 @@
     },
     {
         "PROD_CD": "TW-108",
-        "PROD_DES": "S26 - FPCB",
+        "PROD_DES": "밴드형 기기 A FPCB",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "439",
@@ -97,7 +97,7 @@
     },
     {
         "PROD_CD": "LM-125",
-        "PROD_DES": "DTP503030-400mAh",
+        "PROD_DES": "배터리 셀(400mAh)",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "76",
@@ -113,7 +113,7 @@
     },
     {
         "PROD_CD": "MM-108",
-        "PROD_DES": "S26 밴드 커버(민트)",
+        "PROD_DES": "밴드형 기기 A 커버(민트)",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "888",
@@ -121,7 +121,7 @@
     },
     {
         "PROD_CD": "MM-115",
-        "PROD_DES": "건식전극(S26용)",
+        "PROD_DES": "건식전극(기기 A용)",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "856",
@@ -129,7 +129,7 @@
     },
     {
         "PROD_CD": "SM-107",
-        "PROD_DES": "S26 박스",
+        "PROD_DES": "밴드형 기기 A 박스",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "143",
@@ -137,7 +137,7 @@
     },
     {
         "PROD_CD": "SM-109",
-        "PROD_DES": "S26 파우치",
+        "PROD_DES": "밴드형 기기 A 파우치",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "492",
@@ -145,7 +145,7 @@
     },
     {
         "PROD_CD": "SM-002",
-        "PROD_DES": "S20,S26 방습지",
+        "PROD_DES": "방습지(기기 공용)",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "185",
@@ -153,7 +153,7 @@
     },
     {
         "PROD_CD": "MM-018",
-        "PROD_DES": "USB 케이블(S20/C-type/흰색)",
+        "PROD_DES": "USB 케이블(C-type/흰색)",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "1128",
@@ -161,7 +161,7 @@
     },
     {
         "PROD_CD": "SP-102",
-        "PROD_DES": "건식전극(S26용) 1set(3ea)",
+        "PROD_DES": "건식전극(기기 A용) 1set(3ea)",
         "WH_CD": "00001",
         "WH_DES": "본사창고",
         "BAL_QTY": "869",

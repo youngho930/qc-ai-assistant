@@ -227,7 +227,7 @@ TOOL_SCHEMAS = [
             "properties": {
                 "keyword": {
                     "type": "string",
-                    "description": "품번(예: FP-105) 또는 품목명 일부(예: S26 밴드)",
+                    "description": "품번(예: FP-105) 또는 품목명 일부(예: 밴드형 기기 A)",
                 },
                 "warehouse": {
                     "type": "string",

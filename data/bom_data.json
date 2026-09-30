@@ -2,7 +2,7 @@
     {
         "parentId": null,
         "code": "FP-105",
-        "name": "S26밴드",
+        "name": "밴드형 기기 A",
         "supplier": "대성전자",
         "version": "엑셀 업로드",
         "reqQty": 1,
@@ -12,7 +12,7 @@
     {
         "parentId": 1774577894810,
         "code": "SP-117",
-        "name": "S26 밴드 반제품",
+        "name": "밴드형 기기 A 반제품",
         "supplier": "대성전자",
         "version": "엑셀 업로드",
         "reqQty": 1,
@@ -22,7 +22,7 @@
     {
         "parentId": 1774577894980,
         "code": "SP-106",
-        "name": "전극 less S26 밴드",
+        "name": "밴드형 기기 A(전극 미장착)",
         "supplier": "대성전자",
         "version": "엑셀 업로드",
         "reqQty": 1,
@@ -32,7 +32,7 @@
     {
         "parentId": 1774577895165,
         "code": "TW-108",
-        "name": "S26 - FPCB",
+        "name": "밴드형 기기 A FPCB",
         "supplier": "에이치파츠",
         "version": "엑셀 업로드",
         "reqQty": 1,
@@ -42,7 +42,7 @@
     {
         "parentId": 1774577895165,
         "code": "LM-125",
-        "name": "DTP503030-400mAh",
+        "name": "배터리 셀(400mAh)",
         "supplier": "블루셀",
         "version": "엑셀 업로드",
         "reqQty": 1,
@@ -62,7 +62,7 @@
     {
         "parentId": 1774577895165,
         "code": "MM-108",
-        "name": "S26 밴드 커버(민트)",
+        "name": "밴드형 기기 A 커버(민트)",
         "supplier": "대성전자",
         "version": "엑셀 업로드",
         "reqQty": 1,
@@ -72,7 +72,7 @@
     {
         "parentId": 1774577894980,
         "code": "MM-115",
-        "name": "건식전극(S26용)",
+        "name": "건식전극(기기 A용)",
         "supplier": "대성전자",
         "version": "엑셀 업로드",
         "reqQty": 3,
@@ -82,7 +82,7 @@
     {
         "parentId": 1774577894810,
         "code": "SM-107",
-        "name": "S26 박스",
+        "name": "밴드형 기기 A 박스",
         "supplier": "가온패키징",
         "version": "엑셀 업로드",
         "reqQty": 1,
@@ -92,7 +92,7 @@
     {
         "parentId": 1774577894810,
         "code": "SM-109",
-        "name": "S26 파우치",
+        "name": "밴드형 기기 A 파우치",
         "supplier": "한빛기프트",
         "version": "엑셀 업로드",
         "reqQty": 1,
@@ -102,7 +102,7 @@
     {
         "parentId": 1774577894810,
         "code": "SM-002",
-        "name": "S20,S26 방습지",
+        "name": "방습지(기기 공용)",
         "supplier": "미지정",
         "version": "엑셀 업로드",
         "reqQty": 1,
@@ -112,7 +112,7 @@
     {
         "parentId": 1774577894810,
         "code": "MM-018",
-        "name": "USB 케이블(S20/C-type/흰색)",
+        "name": "USB 케이블(C-type/흰색)",
         "supplier": "대성전자",
         "version": "엑셀 업로드",
         "reqQty": 1,
@@ -122,7 +122,7 @@
     {
         "parentId": 1774577894810,
         "code": "SP-102",
-        "name": "건식전극(S26용) 1set(3ea)",
+        "name": "건식전극(기기 A용) 1set(3ea)",
         "supplier": "대성전자",
         "version": "엑셀 업로드",
         "reqQty": 1,
@@ -132,7 +132,7 @@
     {
         "parentId": 1774577896923,
         "code": "MM-115",
-        "name": "건식전극(S26용)",
+        "name": "건식전극(기기 A용)",
         "supplier": "대성전자",
         "version": "엑셀 업로드",
         "reqQty": 3,
