@@ -16,6 +16,7 @@ from google.genai import types
 import tools
 import rag
 import mask
+import gemini_call
 
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 MAX_STEPS = 6
@@ -101,8 +102,36 @@ def summarize_trace(trace, budget=TRACE_BUDGET):
 def _client():
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
-        raise RuntimeError("GEMINI_API_KEY 가 설정되지 않았습니다.")
+        gemini_call.log.warning("GEMINI_API_KEY 가 설정되지 않았습니다.")
+        raise gemini_call.GeminiConfigError()
     return genai.Client(api_key=key)
+
+
+def _generate(client, contents, config):
+    """
+    답변 생성. 일시 오류는 기본 모델로 최대 3번 다시 시도하고,
+    그래도 안 되면 예비 모델(GEMINI_FALLBACK_MODEL)이 설정돼 있을 때만 한 번 더 시도한다.
+    """
+    call = lambda model: client.models.generate_content(model=model, contents=contents, config=config)
+    try:
+        return gemini_call.with_retry(f"generate_content[{MODEL}]", lambda: call(MODEL))
+    except gemini_call.errors.APIError as e:
+        if e.code not in gemini_call.TRANSIENT_CODES:
+            gemini_call.log_error("generate_content (재시도 안 하는 오류)", e)
+            raise gemini_call.GeminiUserError(gemini_call.MSG_OTHER) from None
+        last = e
+
+    fallback = os.environ.get("GEMINI_FALLBACK_MODEL", "").strip()
+    if fallback and fallback != MODEL:
+        gemini_call.log.warning("기본 모델이 계속 실패해 예비 모델로 한 번 더 시도합니다.")
+        try:
+            return call(fallback)
+        except gemini_call.errors.APIError as e:
+            gemini_call.log_error(f"generate_content[예비 {fallback}]", e)
+            if e.code in gemini_call.CONFIG_CODES:
+                raise gemini_call.GeminiConfigError() from None
+            last = e
+    raise gemini_call.unavailable_from(last) from None
 
 
 def _config(onboarding, masked):
@@ -166,9 +195,7 @@ def run(user_message, history=None, onboarding=False, masked=False, on_step=None
     trace = []
 
     for _ in range(MAX_STEPS):
-        response = client.models.generate_content(
-            model=MODEL, contents=contents, config=_config(onboarding, masked)
-        )
+        response = _generate(client, contents, _config(onboarding, masked))
 
         candidate = response.candidates[0]
         calls = [p.function_call for p in (candidate.content.parts or [])

@@ -23,13 +23,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 try:
-    for key in ("GEMINI_API_KEY", "GEMINI_MODEL", "EMBED_MODEL"):
+    for key in ("GEMINI_API_KEY", "GEMINI_MODEL", "GEMINI_FALLBACK_MODEL", "EMBED_MODEL"):
         if key in st.secrets:
             os.environ[key] = st.secrets[key]
 except Exception:
     pass  # secrets.toml 이 없으면 .env 값을 그대로 사용
 
 import agent  # 키 설정 후에 import
+import gemini_call
 
 EXAMPLES_EXPERT = [
     "밴드형 기기 A 200대 생산하려는데 부속품 재고 충분해?",
@@ -232,15 +233,15 @@ if prompt:
                     on_step=on_step,
                 )
                 status.update(label="확인 완료", state="complete", expanded=False)
+            except gemini_call.GeminiUserError as e:
+                # 서버 붐빔·사용 한도·설정 오류: 한국어 안내만 (원문은 서버 로그에 이미 남김)
+                answer = e.user_message
+                trace, followups = [], []
+                status.update(label="처리 중단됨", state="error", expanded=False)
             except Exception as e:
-                msg = str(e)
-                if "RESOURCE_EXHAUSTED" in msg or "429" in msg:
-                    answer = (
-                        "무료 API 사용 한도에 도달했습니다. "
-                        "잠시 후 다시 시도해 주세요."
-                    )
-                else:
-                    answer = f"오류가 발생했습니다: {e}"
+                # 예상하지 못한 오류도 원문은 화면에 내보내지 않는다
+                gemini_call.log_error("질문 처리", e)
+                answer = gemini_call.MSG_OTHER
                 trace, followups = [], []
                 status.update(label="처리 중단됨", state="error", expanded=False)
 

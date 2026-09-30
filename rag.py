@@ -17,6 +17,8 @@ import numpy as np
 from google import genai
 from google.genai import types
 
+import gemini_call
+
 BASE = Path(__file__).parent
 DOCS_DIR = BASE / "data" / "docs"
 INDEX_PATH = BASE / "index" / "docs_index.npz"
@@ -27,7 +29,8 @@ EMBED_MODEL = os.environ.get("EMBED_MODEL", "gemini-embedding-001")
 def _client():
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
-        raise RuntimeError("GEMINI_API_KEY 가 설정되지 않았습니다.")
+        gemini_call.log.warning("GEMINI_API_KEY 가 설정되지 않았습니다.")
+        raise gemini_call.GeminiConfigError()
     return genai.Client(api_key=key)
 
 
@@ -70,11 +73,22 @@ def _embed(client, texts, task_type):
     vectors = []
     for i in range(0, len(texts), 20):
         batch = texts[i:i + 20]
-        res = client.models.embed_content(
-            model=EMBED_MODEL,
-            contents=batch,
-            config=types.EmbedContentConfig(task_type=task_type),
-        )
+        # 일시 오류는 다시 시도. 임베딩은 모델을 바꾸면 벡터가 달라지므로 예비 모델은 쓰지 않는다.
+        # 끝내 실패하면 원문 대신 한국어 안내 오류를 올린다 (도구 결과로 모델에 전달되므로).
+        try:
+            res = gemini_call.with_retry(
+                f"embed_content[{EMBED_MODEL}]",
+                lambda: client.models.embed_content(
+                    model=EMBED_MODEL,
+                    contents=batch,
+                    config=types.EmbedContentConfig(task_type=task_type),
+                ),
+            )
+        except gemini_call.errors.APIError as e:
+            if e.code in gemini_call.TRANSIENT_CODES:
+                raise gemini_call.unavailable_from(e) from None
+            gemini_call.log_error("embed_content (재시도 안 하는 오류)", e)
+            raise gemini_call.GeminiUserError(gemini_call.MSG_OTHER) from None
         vectors.extend([e.values for e in res.embeddings])
     arr = np.array(vectors, dtype=np.float32)
     # 정규화해두면 검색 시 내적만으로 코사인 유사도가 나온다
